@@ -1,0 +1,9 @@
+<ion-content>
+  <li *ngFor="let item of items | async;let i=index">
+    <table>{{i}}{{item.ans}}</table>
+<tr></tr>
+    </li>
+</ion-content>
+<div >
+  <ion-button class="btn btn-primary" (click)="endquiz()">End quiz</ion-button>
+    </div>

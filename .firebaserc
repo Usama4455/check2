@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "quiztest-cb7de",
+    "staging": "quiztest-cb7de"
+  },
+  "targets": {
+    "quiztest-cb7de": {
+      "hosting": {
+        "app": [
+          "quiztest-cb7de"
+        ]
+      }
+    }
+  }
+}

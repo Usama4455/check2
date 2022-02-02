@@ -1,0 +1,59 @@
+<ion-content *ngIf="this.q1===true">
+    <h1>Quiz started </h1>
+    <h3>{{get() |json}}</h3>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="valueselected">
+        <ion-item>
+         <ion-label> {{get1()|json}} </ion-label>
+          <ion-radio  value="{{get1() | json}}"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label> {{get2()|json}} </ion-label>
+           <ion-radio  value="{{get2() | json}}"></ion-radio>
+         </ion-item>
+         <ion-item>
+          <ion-label> {{get3()|json}} </ion-label>
+           <ion-radio  value="{{get3() | json}}"></ion-radio>
+         </ion-item>
+         <ion-item>
+          <ion-label> {{get4()|json}} </ion-label>
+           <ion-radio  value="{{get4() |json}}"></ion-radio>
+         </ion-item>
+        </ion-radio-group>
+        </ion-list>
+<div>
+      <label > Let's submit your answer</label>
+      <!-- Submit Button -->
+      <ion-button type="submit" color="success" shape="round" class="btn btn-danger btn-lg btn-block" (click)="goto()" [disabled]="!valueselected"> Submit</ion-button>
+</div>
+</ion-content >
+<ion-content *ngIf="this.q1===false">
+  <h1>Quiz started</h1>
+  <h3>{{get5()|json}}</h3>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="valueselected">
+      <ion-item>
+       <ion-label>{{get6()|json}}</ion-label>
+        <ion-radio  value="{{get6()|json}}"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{get7()|json}}</ion-label>
+         <ion-radio  value="{{get7()|json}}"></ion-radio>
+       </ion-item>
+       <ion-item>
+        <ion-label>{{get8()|json}}</ion-label>
+         <ion-radio  value="{{get8()|json}}"></ion-radio>
+       </ion-item>
+       <ion-item>
+        <ion-label>{{get9()|json}}</ion-label>
+         <ion-radio  value="{{get9()|json}}"></ion-radio>
+       </ion-item>
+      </ion-radio-group>
+      </ion-list>
+<div>
+    <label > Let's submit your answer</label>
+    <!-- Submit Button -->
+    <ion-button type="submit" color="success" shape="round" class="btn btn-danger btn-lg btn-block" (click)="goto()" [disabled]="!valueselected"> Submit</ion-button>
+</div>
+</ion-content>
+

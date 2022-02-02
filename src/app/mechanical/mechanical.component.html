@@ -1,0 +1,39 @@
+<div>
+  <ion-fab-button type="back" (click)="back()">Back </ion-fab-button>
+</div>
+<ion-content>
+  <div>
+    <ion-label color="primary"  stacked >Enter Question</ion-label>
+    <input type="text" class="form-control"  [(ngModel)]="question" placeholder="Enter question">
+  </div>
+  <div>
+    <ion-label color="primary"  stacked >Enter Question No</ion-label>
+    <input type="number" class="form-control" [(ngModel)]="questionno" placeholder="Enter question No">
+  </div>
+    <div >
+    <ion-label color="primary"  stacked >Enter Options</ion-label>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option1" placeholder="option1">
+  </div>
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="option2" placeholder="option2">
+    </div>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option3" placeholder="option3">
+    </div>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option4" placeholder="option4">
+  </div>
+  </div>
+  <ion-label color="primary"  stacked >Correct answer</ion-label>
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="ans1" placeholder="correct answer">
+  </div>
+
+  <div >
+<ion-button class="btn btn-primary" (click)="mechanical()" [disabled]="!question||!questionno||!option1||!option2||!option3||!option4||!ans1">Save data</ion-button>
+  </div>
+  <p>
+    <h4><b>{{data}}</b></h4>
+  </ion-content>
+

@@ -1,0 +1,79 @@
+<div>
+  <ion-fab-button type="back" (click)="back()">Back </ion-fab-button>
+</div>
+<ion-content>
+  <div>
+    <ion-label color="primary"  stacked >Enter Question</ion-label>
+    <input type="text" class="form-control"  [(ngModel)]="question" placeholder="Enter question">
+  </div>
+  <div>
+    <ion-label color="primary"  stacked >Enter Question No</ion-label>
+    <input type="number" class="form-control" [(ngModel)]="questionno" placeholder="Enter question No">
+  </div>
+    <div >
+    <ion-label color="primary"  stacked >Enter Options</ion-label>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option1" placeholder="option1">
+  </div>
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="option2" placeholder="option2">
+    </div>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option3" placeholder="option3">
+    </div>
+    <div>
+    <input type="text" class="form-control" [(ngModel)]="option4" placeholder="option4">
+  </div>
+  </div>
+  <ion-label color="primary"  stacked >Correct answer</ion-label>
+  <div>
+    <input type="text" class="form-control" [(ngModel)]="ans1" placeholder="correct answer">
+  </div>
+
+  <div >
+<ion-button class="btn btn-primary" (click)="createquestion()" [disabled]="!question||!questionno||!option1||!option2||!option3||!option4||!ans1">Save data</ion-button>
+  </div>
+  <p>
+    <h4><b>{{data}}</b></h4>
+  </ion-content>
+    <!--
+
+    <h1>Quiz started </h1>
+    <h3>{{this.d1}}{{this.d}}</h3>
+    <ion-list>
+    <ion-radio-group [(ngModel)]="valueselected">
+    <ion-item>
+      <ion-label> {{this.d2}} </ion-label>
+      <ion-radio  value="{{this.d2}}"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label> {{this.d3}} </ion-label>
+       <ion-radio  value="{{this.d3}}"></ion-radio>
+     </ion-item>
+     <ion-item>
+      <ion-label> {{this.d4}} </ion-label>
+       <ion-radio  value="{{this.d4}}"></ion-radio>
+     </ion-item>
+     <ion-item>
+      <ion-label> {{this.d5}} </ion-label>
+       <ion-radio  value="{{this.d5}}"></ion-radio>
+     </ion-item>
+  </ion-radio-group>
+</ion-list>
+<div>
+  <ion-button type="submit" class="btn btn-primary" (click)="goto()" [disabled]="!valueselected">Save data</ion-button>
+    </div>
+    -->
+
+  <p>
+    <!-- Submit Button  <h4>{{this.id}}</h4>-->
+
+
+
+
+
+
+
+
+
+
